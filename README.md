@@ -1,5 +1,5 @@
 # TicTacToe
-A simple Game of TicTacToe between 2 Players 
+A simple Game of TicTacToe between 2 Players <br>
 The dockerized solution is attached.
 To run the game via docker:
 - Save all files from this TicTacToe Repository to any folder in your computer 
