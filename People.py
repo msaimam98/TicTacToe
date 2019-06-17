@@ -7,6 +7,3 @@ class Player:
 
         self.name = name
         self.tracking_num = token
-
-    def give_name(self) -> str:
-        """Gives the name of the player"""
