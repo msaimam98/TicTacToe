@@ -25,7 +25,7 @@ class Game:
 
     def make_move(self, move: int, player: Player) -> None:
         """
-        Have a particular player make a move
+        Have a particular player make a move on the TicTacToe Grid 
         """
         if player == self.player1:
             if move == 1:
@@ -85,7 +85,9 @@ class Game:
                 self.pos_game_array[8] = (2, 9)
 
     def someone_win(self, player: Player) -> bool:
-
+        """
+        Check to see if player has won the game
+        """
         win = False
         # check vertical
         for i in range(len(self.game_array)):
@@ -127,6 +129,9 @@ class Game:
                 return win
 
     def all_places_not_full(self) -> bool:
+        """
+        Check to see if all places on the grid are full or not 
+        """
         not_full = True
         for item in self.game_array:
             for element in item:
@@ -136,7 +141,8 @@ class Game:
         return not_full
 
     def check_move(self, move: int) -> bool:
-        """Check if a move is already made
+        """Check if a move is already made at the position move
+           on the grid
         """
         for i in range(len(self.pos_game_array)):
             if (i + 1) == move:
@@ -149,7 +155,7 @@ class Game:
 
     def current_state(self):
         """
-        print the current state of the game
+        Print the current state of the game
         """
         print("This is the current state of your game ")
         print('_' + str(self.game_array[0][0]) +'_|_' +
